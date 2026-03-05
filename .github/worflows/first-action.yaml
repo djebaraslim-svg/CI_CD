@@ -12,7 +12,7 @@ jobs:
     # Spécification de l'environnement d'exécution prêté par GitHub
     runs-on: windows-latest
     # Définition des étapes à réaliser
-    steps :
+    steps:
       # Première et seule étape de ce workflow
       # Nom et l'action à réaliser
       - name: print _hello
