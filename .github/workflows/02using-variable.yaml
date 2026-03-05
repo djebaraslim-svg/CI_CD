@@ -18,4 +18,5 @@ jobs:
       - name: Confirm deploy
         run: echo "Déploiement de la branche $GITHUB_REF" # exemple d'utilisation d'une variable d'environnement prédéfinie par GitHub, $GITHUB_REF contient la référence de la branche ou du tag qui a déclenché le workflow
       - name: formation location
-        run: echo "La formation se déroule à $FORMATION_CENTER" # exemple d'utilisation de la variable d'environnement personnalisée définie précédemment, $FORMATION_CENTER contient la valeur "Digital city"
+        run: 
+          echo "La formation se déroule à $FORMATION_CENTER" # exemple d'utilisation de la variable d'environnement personnalisée définie précédemment, $FORMATION_CENTER contient la valeur "Digital city"
