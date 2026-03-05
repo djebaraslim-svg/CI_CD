@@ -14,16 +14,16 @@ env:
 # Job qui manipule des variables et secrets
 jobs:
   use_variables:
-    environnement : ENV_1 # setting environnement
+    environment : ENV_1 # setting environnement
     runs-on: ubuntu-latest
     steps: 
       - name: Confirm deploy
         run: echo "Déploiement de la branche $GITHUB_REF" # exemple d'utilisation d'une variable d'environnement prédéfinie par GitHub, $GITHUB_REF contient la référence de la branche ou du tag qui a déclenché le workflow
       - name: formation location
-        run: 
+        run: |
           echo "La formation se déroule à $FORMATION_CENTER" # exemple d'utilisation de la variable d'environnement personnalisée définie précédemment, $FORMATION_CENTER contient la valeur "Digital city"
       - name: variable github
-        run: 
+        run: |
           echo "Project name : ${{vars.PROJECT_NAME}}"
           echo "user_pwd : ${{secrets.USER_PASSWORD}}"
           echo "Mode selected" : ${{vars.MODE}}"
