@@ -1,5 +1,6 @@
 # Demo01-Intro Github Action
 
+## Part 1 : syntaxe 
 # Mise place du projet
 - Initialiser le repo git 
 - Créer le projet et le mettre sur git
@@ -35,3 +36,15 @@ Ensemble des events écoutés
 L'ensemble des actions à faire.
 -Runner -> machines virtuelles prêtées par github
 - Actions à faire : script(syntaxe qui dépend du terminal), utilisation d'action
+
+## Part 2 : variables
+### Mise en place
+- Nouveau fichier worflow
+- Push sur github
+- Définir des variables et secrets : 
+    -définir une zone env dans le worflow (attention c'est public! pas de password epar exemple)
+    -définir dans les paramètres du repo github
+    -manipuler les variables d'event du worflow (lié au déclenchement du trigger)
+
+### Syntaxe d'utilisation
+- Variable d'env local : "$VAR_NAME" (écriture sous linux) ET "$env:VAR_NAME" (écriture sous windows)

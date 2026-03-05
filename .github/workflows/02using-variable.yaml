@@ -1,0 +1,21 @@
+name: manipuler des variables
+
+# Trigger : Push sur la branche main et trigger manuel pour exécuter l'action
+on:
+  push:
+    - main
+  workflow_dispatch:
+
+# création d'une variable d'environnement personnalisée
+env:
+  FORMATION_CENTER: "Digital city"
+
+# Job qui manipule des variables et secrets
+jobs:
+  use_variables:
+    runs-on: ubuntu-latest
+    steps: 
+      - name: Confirm deploy
+        run: echo "Déploiement de la branche $GITHUB_REF" # exemple d'utilisation d'une variable d'environnement prédéfinie par GitHub, $GITHUB_REF contient la référence de la branche ou du tag qui a déclenché le workflow
+      - name: formation location
+        run: echo "La formation se déroule à $FORMATION_CENTER" # exemple d'utilisation de la variable d'environnement personnalisée définie précédemment, $FORMATION_CENTER contient la valeur "Digital city"
