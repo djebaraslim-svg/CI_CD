@@ -8,12 +8,12 @@ on:
   # Travaux à réaliser
 jobs:
   # Nom du job/travail à réaliser
-  show-hello:
+  show_hello:
     # Spécification de l'environnement d'exécution prêté par GitHub
     runs-on: windows-latest
     # Définition des étapes à réaliser
     steps:
       # Première et seule étape de ce workflow
       # Nom et l'action à réaliser
-      - name: print _hello
+      - name: print_hello
         run: echo "Hello World !" # Affiche "Hello World !" dans la console, la commande echo est utilisée pour afficher du texte dans la console
