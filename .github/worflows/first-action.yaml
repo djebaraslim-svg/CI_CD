@@ -1,0 +1,19 @@
+# Définition du nom du worflow (totalité du fichier YAML)
+name: Show "Hello World"
+
+# Triger manuel pour exécuter l'action
+on:
+  workflow_dispatch:
+
+  # Travaux à réaliser
+jobs:
+  # Nom du job/travail à réaliser
+  show-hello:
+    # Spécification de l'environnement d'exécution prêté par GitHub
+    runs-on: windows-latest
+    # Définition des étapes à réaliser
+    steps :
+      # Première et seule étape de ce workflow
+      # Nom et l'action à réaliser
+      - name: print _hello
+        run: echo "Hello World !" # Affiche "Hello World !" dans la console, la commande echo est utilisée pour afficher du texte dans la console
