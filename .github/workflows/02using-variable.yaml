@@ -9,12 +9,12 @@ on:
 
 # création d'une variable d'environnement personnalisée
 env:
-  FORMATION_CENTER: "DigitalCity ©"
+  FORMATION_CENTER: "Digitality ©"
 
 # Job qui manipule des variables et secrets
 jobs:
   use_variables:
-    environment : ENV_1 # setting environnement
+    environment: ENV_1 # setting environnement
     runs-on: ubuntu-latest
     steps: 
       - name: Confirm deploy
