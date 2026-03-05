@@ -47,4 +47,17 @@ L'ensemble des actions à faire.
     -manipuler les variables d'event du worflow (lié au déclenchement du trigger)
 
 ### Syntaxe d'utilisation
-- Variable d'env local : "$VAR_NAME" (écriture sous linux) ET "$env:VAR_NAME" (écriture sous windows)
+### Variable d'env local : 
+Utilisation
+-"$VAR_NAME" (écriture sous linux) ET "$env:VAR_NAME" (écriture sous windows)
+
+### Variables et secrets dans github
+Aller à setting>secrets ans variables>action pour configurer les variables.
+
+Deux types d'éléments configurables : 
+- Repository : variables toujours accessible dans le repo
+- Environnement : Accessible si le job utilise environnement : env-name 
+
+Utilisation
+- variables : ${{vars.VAR_NAME}}
+- secrets : ${{secrets.VAR_NAME}}
