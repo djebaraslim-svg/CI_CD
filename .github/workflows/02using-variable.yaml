@@ -3,8 +3,8 @@ name: manipuler des variables
 # Trigger : Push sur la branche main et trigger manuel pour exécuter l'action
 on:
   push:
-    branche:
-    - main
+    branches:
+      - main
   workflow_dispatch:
 
 # création d'une variable d'environnement personnalisée
