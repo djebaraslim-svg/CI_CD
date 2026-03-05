@@ -9,7 +9,7 @@ on:
 
 # création d'une variable d'environnement personnalisée
 env:
-  FORMATION_CENTER: "Digital city ©"
+  FORMATION_CENTER: "DigitalCity ©"
 
 # Job qui manipule des variables et secrets
 jobs:
